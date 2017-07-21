@@ -1,0 +1,26 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:center">
+  <h1>
+    Welcome to {{title}}!
+  </h1>
+</div>
+<app-hola-mundo></app-hola-mundo>
+<div class="col-xs-12 col-md-4">
+  <app-calculadora autor="Pepe el Toro" ver="0.0.1" modo="false" [inCalValue]="extValue" >    
+     Esta <b>calculadora {{title}}</b> fue <span #palabra>diseñada</span> por su servidor
+  </app-calculadora>
+</div>
+<div class="col-md-4">
+  <app-calculadora (igualClicked)="otherValueCalEvent($event)"></app-calculadora>
+</div>
+<div class="col-md-4">
+  <app-calculadora (igualClicked)="catchCalcEvent($event)"></app-calculadora>
+</div>
+<div class="col-sm-12 text-center">
+  <input type="text" name="" readonly value="{{calcValor}}">
+</div>
+
+<hr/>
+<h2>Eventos</h2>
+<app-paginador (cambioPagina)="reportarCambio($event)"></app-paginador>
+<p>{{resultados}}</p>

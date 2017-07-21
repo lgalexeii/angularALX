@@ -1,0 +1,26 @@
+<br>
+
+<div class="col-md-12">
+  <h1> Calculadora </h1>
+  <input type="text" class="col-xs-12 text-right" readonly value="{{boxValue}}">
+  <div [hidden]="!showSct">
+    <button type="button"  class="btn btn-primary col-xs-4" (click)="concatNum(7)">Sin</button>
+    <button type="button" class="btn btn-primary col-xs-4" (click)="concatNum(8)">Cos</button>
+    <button type="button" class="btn btn-primary col-xs-4" (click)="concatNum(9)">Lg</button>
+  </div>
+  <button type="button" class="btn btn-primary col-xs-4" (click)="concatNum(7)">7</button>
+  <button type="button" class="btn btn-primary col-xs-4" (click)="concatNum(8)">8</button>
+  <button type="button" class="btn btn-primary col-xs-4" (click)="concatNum(9)">9</button>
+  <button type="button" class="btn btn-primary col-xs-4" (click)="concatNum(4)">4</button>
+  <button type="button" class="btn btn-primary col-xs-4" (click)="concatNum(5)">5</button>
+  <button type="button" class="btn btn-primary col-xs-4" (click)="concatNum(6)">6</button>
+  <button type="button" class="btn btn-primary col-xs-4" (click)="concatNum(1)">1</button>
+  <button type="button" class="btn btn-primary col-xs-4" (click)="concatNum(2)">2</button>
+  <button type="button" class="btn btn-primary col-xs-4" (click)="concatNum(3)">3</button>
+  <button type="button" class="btn btn-primary col-xs-4" (click)="concatNum(0)">0</button>
+  <button type="button" class="btn btn-warning col-xs-4" (click)="cleanBox()">C</button>
+  <button type="button" class="btn btn-success col-xs-4" (click)="btnIgualA()">=</button>
+</div>
+<div class="col-xs-12">
+  {{autor}} <br> {{version}} <br> {{msgCientifica}}
+</div>
