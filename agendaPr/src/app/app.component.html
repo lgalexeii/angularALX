@@ -1,0 +1,20 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:left" appAyuda="Border of agenda">
+  <app-agenda>
+    <app-cita fecha="20/jun/2017" asunto="Ir a pescar a la marquesa"></app-cita>
+    <app-cita fecha="25/jul/2017" asunto="Surfear en las playas de CDMX" [hp]="true"></app-cita>
+    <app-cita fecha="25/jul/2018" asunto="Comprar auto volador"></app-cita>
+  </app-agenda>
+</div>
+<br>
+<app-forma-simple></app-forma-simple>
+
+<pre appAyuda=".:help me please:."> {{aPerson | formatPersona:'P M N'}}</pre>
+<app-test-web></app-test-web>
+<hr>
+<h1>Routes</h1>
+<router-outlet></router-outlet>
+<ul>
+  <li><a href="#/agenda">agenda</a></li>
+  <li><a href="#/calculadora">fake calc</a></li>
+</ul>

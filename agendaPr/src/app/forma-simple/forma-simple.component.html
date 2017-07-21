@@ -1,0 +1,25 @@
+<input type="radio" name="dClass" value="primary" [(ngModel)]="dClass" > Primary <br>
+<input type="radio" name="dClass" value="success" [(ngModel)]="dClass" > Success <br>
+<input type="radio" name="dClass" value="default" [(ngModel)]="dClass" > Default <br>
+<button type="button" name="button" class="btn"
+[ngClass]="{'btn-primary':isPrimary,'btn-success':isSuccess,'btn-default':isDefault}">My Button ngClass</button>
+<button type="button" name="button" class="btn"
+[ngStyle]="{'background-color':dStyle.bgColor,'color':dStyle.color,'border-color':dStyle.bdColor}">My Button ngStyle</button>
+<br>
+<pre>{{dStyle|json}}</pre>
+<br>
+<table appAyuda=".:Border table::..">
+  <tr>
+    <td>Currency</td><td>{{23000|currency:'MXN':'$'}}</td>
+  </tr>
+  <tr>
+    <td>Date</td><td>{{'11/05/2015'|date:'dd/MMM/yyyy'}}</td>
+  </tr>
+  <tr>
+    <td>Number</td><td>{{3.141678|number:'1.4-4'}}</td>
+  </tr>
+  <tr>
+    <td>Percent</td><td>{{0.2|percent:'1.2-4'}}</td>
+  </tr>
+</table>
+<br>
